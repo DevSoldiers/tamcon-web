@@ -1,6 +1,6 @@
 import Container from "@/_components/container";
 import Image from "next/image";
-import Sidebar from "./sidebar";
+import Sidebar from "./sidebar.ui";
 import { font_header } from "@/app/fonts/fonts";
 
 export default function Navbar() {

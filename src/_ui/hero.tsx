@@ -36,7 +36,7 @@ export function Hero() {
               </div>
               {/* button */}
               <button
-                className={`${font_header.className} text-base font-bold text-gray-25 py-4 px-6 mt-6 bg-primary-600 max-w-32 rounded-xs hover:bg-white hover:text-primary-600 rounded-sm`}
+                className={`${font_header.className} text-base font-bold text-gray-25 py-4 px-6 mt-6 bg-primary-600 max-w-32 rounded-xs hover:bg-white hover:text-primary-600`}
               >
                 Book Meeting
               </button>
