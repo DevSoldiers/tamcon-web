@@ -9,7 +9,7 @@ export default function Container({
 }>) {
   return (
     <section
-      className={clsx("px-4 max-w-[1212px] w-full bg-orange-200 mx-auto", className)}
+      className={clsx("px-4 box-border max-w-[1312px] w-full bg-orange-200 mx-auto", className)}
     >
       {children}
     </section>

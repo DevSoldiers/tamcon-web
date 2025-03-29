@@ -14,7 +14,7 @@ export const font_accent = Kode_Mono({
     display: 'swap',
 });
 
-export const body_font = Darker_Grotesque({
+export const font_body = Darker_Grotesque({
     subsets: ['latin'],
     weight: ['300', '400', '500', '600', '700', '800', '900'],
     variable: '--font-font_accent',
