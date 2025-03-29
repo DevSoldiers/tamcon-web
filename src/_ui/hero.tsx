@@ -36,7 +36,7 @@ export function Hero() {
               </div>
               {/* button */}
               <button
-                className={`${font_header.className} text-base font-bold text-gray-25 py-4 px-6 mt-6 bg-primary-600 max-w-32 rounded-xs hover:bg-white hover:text-primary-600`}
+                className={`${font_header.className} text-base font-bold text-gray-25 py-4 px-6 mt-6 bg-primary-600 max-w-32 rounded-xs hover:bg-white hover:text-primary-600 rounded-sm`}
               >
                 Book Meeting
               </button>
@@ -44,7 +44,7 @@ export function Hero() {
           ))}
         </article>
         <section className="right hidden md:block">
-          <Image src="/others/hero_float.svg" className="w-full aspect-auto" alt="tamcon_floating_logo" width={0} height={0}/>
+          <Image src="/others/hero_float.svg" className="w-full aspect-auto animate-float" alt="tamcon_floating_logo" width={0} height={0}/>
         </section>
       </main>
     </Container>

@@ -74,6 +74,20 @@
   --font-light: 300;
 }
 
+@layer utilities {
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
 @layer components {
   .contact_btn {
     @apply hidden md:block px-6 py-4 border border-primary-600 text-primary-600 text-base font-bold hover:bg-primary-600 hover:text-white cursor-pointer;
