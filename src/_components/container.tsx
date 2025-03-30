@@ -15,7 +15,7 @@ export default function Container({ children, className }: ContainerProps): JSX.
   return (
     <section
       className={cn(
-        "px-4 box-border max-w-[1440px] w-full bg-orange-200 mx-auto",
+        "px-4 box-border max-w-[1440px] w-full mx-auto",
         className
       )}
     >
