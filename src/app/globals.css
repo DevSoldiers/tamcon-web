@@ -94,12 +94,17 @@
     @apply hidden md:block px-6 py-4 border border-primary-600 text-primary-600 text-base font-bold hover:bg-primary-600 hover:text-white cursor-pointer;
   }
 
+  .advert_section {
+    background: url("/others/winner_advert.png") no-repeat;
+    background-size: cover;
+  }
+
   .projects_card_clip {
     background: orange;
     background: url("/others/addis_neger.svg") no-repeat 95% bottom;
     background-size: 25%;
     clip-path: circle(19% at 85% 100%);
-    transition:1s;
+    transition: 1s;
   }
 
   @media (max-width: 768px) {
@@ -107,6 +112,11 @@
       background: url("/others/addis_neger.svg") no-repeat 95% bottom;
       clip-path: circle(35% at 74% 100%);
       background-size: auto;
+    }
+
+    .advert_section {
+      background-size: contain;
+      background-position: center bottom;
     }
   }
 
