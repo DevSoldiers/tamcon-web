@@ -29,7 +29,7 @@ export default function Services() {
         className="w-full aspect-auto absolute bottom-0"
       />
       <SystemofTheFuture />
-      <Container className="max-md:max-w-full w-full text-base-0  border-t-1 border-primary-400 py-[90px] md:py-[150px] bg-transparent">
+      <Container className="flex flex-col max-md:max-w-full w-full text-base-0  border-t-1 border-primary-400 py-[90px] md:py-[150px] bg-transparent">
         <h3
           className={`${font_accent.className} text-2xl md:text-4xl font-bold mb-16`}
         >
@@ -51,6 +51,11 @@ export default function Services() {
               </article>
             ))}
         </div>
+        <button
+          className={`${font_header.className} text-base-0 border-white border-2 text-base font-bold bg-primary-600 px-6 py-4 rounded-xs max-w-[151px] w-full col-span-2 self-end mt-16`}
+        >
+          Learn More
+        </button>
       </Container>
     </Container>
   );
