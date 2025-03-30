@@ -50,9 +50,9 @@
   --color-secondary-25: #fef9f0;
 
   /* Font Family */
-  --font-header: 'Bebas Neue';
-  --font-accent: 'Kode Mono';
-  --body-font: 'Darker Grotesque';
+  --font-header: "Bebas Neue";
+  --font-accent: "Kode Mono";
+  --body-font: "Darker Grotesque";
   /* Font Sizes for Headers */
   --text-9xl: 150px;
   --text-8xl: 90px;
@@ -76,7 +76,8 @@
 
 @layer utilities {
   @keyframes float {
-    0%, 100% {
+    0%,
+    100% {
       transform: translateY(0);
     }
     50% {
@@ -93,12 +94,26 @@
     @apply hidden md:block px-6 py-4 border border-primary-600 text-primary-600 text-base font-bold hover:bg-primary-600 hover:text-white cursor-pointer;
   }
 
-  /* .service-top-gear{
-    background-color: blue !important;
-    backgrou;
-  } */
-}
+  .projects_card_clip {
+    background: orange;
+    background: url("/others/addis_neger.svg") no-repeat 95% bottom;
+    background-size: 25%;
+    clip-path: circle(19% at 85% 100%);
+    transition:1s;
+  }
 
+  @media (max-width: 768px) {
+    .projects_card_clip {
+      background: url("/others/addis_neger.svg") no-repeat 95% bottom;
+      clip-path: circle(35% at 74% 100%);
+      background-size: auto;
+    }
+  }
+
+  .projects_card_clip:hover {
+    clip-path: circle(100%);
+  }
+}
 
 @theme inline {
   --color-background: var(--background);
