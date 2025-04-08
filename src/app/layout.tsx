@@ -7,6 +7,7 @@ import Services from "@/_ui/service.ui";
 import Projects from "@/_ui/projects.ui";
 import Winners from "@/_ui/winners.ui";
 import Footer from "@/_ui/footer";
+import Footer_Logo_section from "@/_ui/footer.logo.ui";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
         <Projects />
         <Winners />
         <Footer />
+        <Footer_Logo_section />
         {/* {children} */}
       </body>
     </html>

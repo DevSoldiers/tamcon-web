@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <Container className="mt-[71.5px] md:mt-[93.5px]">
+    <Container className="pt-[71.5px] pb-16 md:pt-[93.5px] md:pb-[90px] border-y-[1px] border-primary-25">
       <footer className="grid md:grid-cols-2 justify-baseline md:justify-center">
         <article className="mb-9 md:mb-8 address_wrapper grid gap-y-1">
           <p
