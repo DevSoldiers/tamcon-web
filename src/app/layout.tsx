@@ -6,6 +6,7 @@ import { Hero } from "@/_ui/hero";
 import Services from "@/_ui/service.ui";
 import Projects from "@/_ui/projects.ui";
 import Winners from "@/_ui/winners.ui";
+import Footer from "@/_ui/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,11 +33,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar/>
-        <Hero/>
-        <Services/>
-        <Projects/>
-        <Winners/>
+        <Navbar />
+        <Hero />
+        <Services />
+        <Projects />
+        <Winners />
+        <Footer />
         {/* {children} */}
       </body>
     </html>
