@@ -6,7 +6,7 @@ export default function ContactForm() {
     <Container className="max-w-[unset]">
       <article className="intro_wrapper mb-12">
         <p
-          className={`${font_header} text-4xl font-bold text-primary-600 mb-3.5 uppercase`}
+          className={`${font_header.className} text-4xl font-bold text-primary-600 mb-3.5 uppercase`}
         >
           Contact Us
         </p>
@@ -17,7 +17,7 @@ export default function ContactForm() {
       <form action="" className="flex flex-col gap-y-12">
         <div className="field_items">
           <p
-            className={`${font_header} text-base font-bold text-gray-600 uppercase `}
+            className={`${font_header.className} text-base font-bold text-gray-600 uppercase `}
           >
             Name
           </p>
@@ -26,13 +26,13 @@ export default function ContactForm() {
             name=""
             id=""
             placeholder="Insert Your Name"
-            className={`${font_body} text-base font-regular text-gray-400 w-full border-b-gray-400 border-b-[1px] py-3`}
+            className={`${font_body.className} text-base font-regular text-gray-400 w-full border-b-gray-400 border-b-[1px] py-3`}
           />
         </div>
         {/* email */}
         <div className="field_items">
           <p
-            className={`${font_header} text-base font-bold text-gray-600 uppercase `}
+            className={`${font_header.className} text-base font-bold text-gray-600 uppercase `}
           >
             Name
           </p>
@@ -41,13 +41,13 @@ export default function ContactForm() {
             name=""
             id=""
             placeholder="Insert Your Name"
-            className={`${font_body} text-base font-regular text-gray-400 w-full border-b-gray-400 border-b-[1px] py-3`}
+            className={`${font_body.className} text-base font-regular text-gray-400 w-full border-b-gray-400 border-b-[1px] py-3`}
           />
         </div>
         {/* message */}
         <div className="field_items">
           <p
-            className={`${font_header} text-base font-bold text-gray-600 uppercase `}
+            className={`${font_header.className} text-base font-bold text-gray-600 uppercase `}
           >
             Message
           </p>
@@ -55,7 +55,7 @@ export default function ContactForm() {
             name=""
             id=""
             placeholder="Insert Your Message"
-            className={`${font_body} text-base font-regular text-gray-400 w-full border-b-gray-400 border-b-[1px] py-3 min-h-16`}
+            className={`${font_body.className} text-base font-regular text-gray-400 w-full border-b-gray-400 border-b-[1px] py-3 min-h-16`}
           />
         </div>
       </form>

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function ContactUI() {
   return (
-    <Divider className="md:h-[720px] gap-x-10 max-md:gap-y-12">
+    <Divider className="gap-x-10 max-md:gap-y-12">
       <ContactLeftSection className="bg-primary-600 max-h-[640px] h-full flex justify-center items-center">
         <Image
           src={"/others/doughnut.png"}

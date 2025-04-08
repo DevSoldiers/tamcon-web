@@ -47,7 +47,7 @@ export default function Testimony() {
 
       <section className="max-w-[1132px] mx-auto mt-[105px] md:mt-[120px] flex flex-col gap-y-20 md:flex-row md:gap-16 relative">
         {/* Testimonial cards container */}
-        <div className="relative w-full h-[400px] md:h-[500px]">
+        <div className="relative w-full max-md:w-[95%] h-[400px] md:h-[500px]">
           {testimonials.map((testimonial, index) => {
             // Calculate position and rotation for stacked cards
             const position =
