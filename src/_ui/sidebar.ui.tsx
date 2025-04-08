@@ -3,6 +3,7 @@
 import Hamburger from "@/_components/humMenu";
 import { navLinks } from "@/_content/nav_content";
 import { font_header } from "@/app/fonts/fonts";
+import { removeAllWhitespace } from "@/utils/sanitizer";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -34,7 +35,7 @@ export default function Sidebar() {
             {navLinks?.map((link, key) => (
               <li className="text-" key={key}>
                 <Link
-                  href="#"
+                  href={removeAllWhitespace(link).toLowerCase()}
                   className={`${font_header.className} font-regular text-base text-gray-600`}
                 >
                   {link}
@@ -55,7 +56,7 @@ export default function Sidebar() {
         {navLinks?.map((link, key) => (
           <li key={key}>
             <Link
-              href="#"
+              href={removeAllWhitespace(link).toLowerCase()}
               className={`${font_header} font-regular text-base text-gray-600`}
             >
               {link}
