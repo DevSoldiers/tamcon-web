@@ -11,6 +11,10 @@ type ContainerProps = {
   className?: string;
 };
 
-export default function Divider({ children,className }: ContainerProps) {
-  return <section className={cn("grid md:grid-cols-2 items-center",className)}>{children}</section>;
+export default function Divider({ children, className }: ContainerProps) {
+  return (
+    <section className={cn("grid md:grid-cols-2 items-center", className)}>
+      {children}
+    </section>
+  );
 }
