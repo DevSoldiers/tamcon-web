@@ -31,7 +31,7 @@ export default function Services() {
       <SystemofTheFuture />
       <Container className="flex flex-col max-md:max-w-full w-full text-base-0  border-t-1 border-primary-400 py-[90px] md:py-[150px] bg-transparent">
         <h3
-          className={`${font_accent.className} text-2xl md:text-4xl font-bold mb-16`}
+          className={`${font_accent.className} text-2xl md:text-4xl font-extrabold mb-16`}
         >
           [Services]
         </h3>

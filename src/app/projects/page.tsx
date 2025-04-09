@@ -5,7 +5,9 @@ import { projects_list } from "@/_content/projects_content";
 export default function FeaturedProjects() {
   return (
     <Container>
-      <h2 className={`${font_accent.className} text-2xl md:text-4xl font-bold`}>
+      <h2
+        className={`${font_accent.className} text-2xl md:text-4xl font-extrabold`}
+      >
         <span>[</span>
         Featured Projects
         <span>]</span>

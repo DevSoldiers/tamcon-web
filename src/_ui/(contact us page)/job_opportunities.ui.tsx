@@ -7,7 +7,7 @@ export default function JobOpportunities() {
     <Container className="max-w-full px-0 bg-primary-600 py-[90px] md:py-[120px] mt-16">
       <Container className="flex flex-col gap-16">
         <h1
-          className={`${font_accent.className} text-2xl md:text-4xl font-bold text-base-0 text-center`}
+          className={`${font_accent.className} text-2xl md:text-4xl font-extrabold text-base-0 text-center`}
         >
           <span>[</span>
           Career Opportunities
@@ -61,12 +61,13 @@ export default function JobOpportunities() {
       <div className="overflow-hidden whitespace-nowrap">
         <div className="inline-flex animate-marquee">
           <p
-            className={`${font_accent.className} inline-block text-base-0 text-7xl md:text-9xl font-bold mr-3 md:mr-14`}
+            className={`${font_accent.className} inline-block text-base-0 text-7xl md:text-9xl font-extrabold mr-3 md:mr-9`}
+            style={{ wordSpacing: "-60px" }}
           >
             Career Opportunities
           </p>
           <p
-            className={`${font_accent.className} inline-block text-base-0 text-7xl md:text-9xl font-bold`}
+            className={`${font_accent.className} inline-block text-base-0 text-7xl md:text-9xl font-extrabold`}
           >
             Career Opportunities
           </p>

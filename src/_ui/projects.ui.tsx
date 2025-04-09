@@ -6,9 +6,9 @@ export default function Projects() {
   return (
     <Container className="mt-9 bg-primary-25 flex flex-col">
       <h2
-        className={`${font_accent.className} text-2xl md:text-4xl font-bold text-primary-600 mb-8`}
+        className={`${font_accent.className} text-2xl md:text-4xl font-extrabold text-primary-600 mb-8`}
       >
-        <span>{"{"}</span>Selected Projects<span>{"}"}</span>
+        <span>{"["}</span>Selected Projects<span>{"]"}</span>
       </h2>
 
       <section className="projects_wrapper flex flex-col">

@@ -6,7 +6,7 @@ export default function ServicesHero() {
   return (
     <Container className="pt-[90.09px] md:pt-20">
       <h1
-        className={`${font_accent.className} text-2xl md:text-4xl font-bold text-base-0 text-center`}
+        className={`${font_accent.className} text-2xl md:text-4xl font-extrabold text-base-0 text-center`}
       >
         <span>[</span>
         Services

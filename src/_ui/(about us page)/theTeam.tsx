@@ -8,7 +8,7 @@ export default function TheTeam() {
     <Container className="pt-16 md:pb-[90px] md:pt-[90px] bg-secondary-600 max-w-full ">
       <Container>
         <h2
-          className={`${font_accent.className} text-2xl md:text-4xl text-gray-600 text-center`}
+          className={`${font_accent.className} text-2xl md:text-4xl text-gray-600 text-center font-extrabold`}
         >
           <span>[</span>
           The Team

@@ -20,7 +20,7 @@ export function Hero() {
                 </div>
                 <div className="self-end max-w-[533px]">
                   <h1
-                    className={`${font_accent.className} uppercase font-bold text-5xl md:text-6xl text-gray-400 text-right text-wrap`}
+                    className={`${font_accent.className} uppercase font-extrabold text-5xl md:text-6xl text-gray-400 text-right text-wrap`}
                   >
                     {content.subTitle}
                   </h1>
@@ -44,7 +44,13 @@ export function Hero() {
           ))}
         </article>
         <section className="right hidden md:block">
-          <Image src="/others/hero_float.svg" className="w-full aspect-auto animate-float" alt="tamcon_floating_logo" width={0} height={0}/>
+          <Image
+            src="/others/hero_float.svg"
+            className="w-full aspect-auto animate-float"
+            alt="tamcon_floating_logo"
+            width={0}
+            height={0}
+          />
         </section>
       </main>
     </Container>

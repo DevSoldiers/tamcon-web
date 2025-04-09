@@ -8,7 +8,7 @@ export default function ContactHero() {
   return (
     <Container className="flex flex-col gap-16">
       <h2
-        className={`${font_accent.className} text-2xl md:text-4xl text-primary-600 font-bold text-center`}
+        className={`${font_accent.className} text-2xl md:text-4xl text-primary-600 font-extrabold text-center`}
       >
         <span>[</span>
         Contact Us
