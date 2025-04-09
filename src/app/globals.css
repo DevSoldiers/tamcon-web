@@ -29,7 +29,7 @@
   --color-primary-700: #242298;
   --color-primary-600: #2D2E83;
   --color-primary-500: #3f379c;
-  --color-primary-400: #603f84;
+  --color-primary-400: #8081B4;
   --color-primary-300: #aaaacd;
   --color-primary-200: #efefef;
   --color-primary-100: #d3d3e5;
@@ -89,6 +89,20 @@
 
   .animate-float {
     animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 15s linear infinite;
   }
 }
 
