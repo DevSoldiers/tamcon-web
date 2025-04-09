@@ -7,13 +7,13 @@ import Winners from "@/_ui/winners.ui";
 
 export default function Home() {
   return (
-    <>
+    <section className="bg-primary-25">
       <Hero />
       <Services />
       <Projects />
       <Winners />
       <Testimony />
       <ContactUI />
-    </>
+    </section>
   );
 }

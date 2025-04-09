@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <Container className="mt-9 bg-white flex flex-col">
+    <Container className="mt-9 bg-primary-25 flex flex-col">
       <h2
         className={`${font_accent.className} text-2xl md:text-4xl font-bold text-primary-600 mb-8`}
       >
@@ -15,7 +15,10 @@ export default function Projects() {
         {Array(3)
           .fill(0)
           .map((_, key) => (
-            <article key={key} className="projects_card py-8 md:pt-8 w-full h-[180px] md:h-[260px] overflow-clip border-b-[1px] border-b-primary-25">
+            <article
+              key={key}
+              className="projects_card py-8 md:pt-8 w-full h-[180px] md:h-[260px] overflow-clip border-b-[1px] border-b-primary-25"
+            >
               <h2
                 className={`${font_header.className} uppercase text-3xl md:text-5xl text-gray-500`}
               >

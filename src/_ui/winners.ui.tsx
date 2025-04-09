@@ -4,7 +4,7 @@ import { font_accent, font_body, font_header } from "@/app/fonts/fonts";
 
 export default function Winners() {
   return (
-    <Divider className="md:h-[720px] gap-x-10 max-md:pb-16">
+    <Divider className="md:h-[720px] gap-x-10 max-md:pb-16 bg-primary-25">
       <article className="bg-primary-600 h-[390px] w-full md:h-full advert_section max-md:mb-8" />
       <Container className="md:px-0 md:w-full md:max-w-full flex flex-col items-baseline md:pr-[120px] max-md:mt-8">
         <article className="flex flex-col items-baseline md:pr-[120px] max-md:mt-8">
