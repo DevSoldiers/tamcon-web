@@ -37,9 +37,16 @@ export default function SystemofTheFuture() {
           </h2>
         </div>
         <button
-          className={`${font_header.className} mt-[90px] md:mt-[120px] text-primary-600 text-base font-bold bg-gray-25 px-6 py-4 rounded-xs mx-auto max-w-[151px] w-full col-span-2`}
+          className={`${font_header.className} cursor-pointer group flex gap-2 mt-[90px] md:mt-[120px] text-primary-600 text-base font-bold bg-gray-25 px-6 py-4 rounded-xs mx-auto max-w-[151px] w-full col-span-2`}
         >
-          Learn More
+          <p>Learn More</p>
+          <Image
+            src="/others/right_arrow.svg"
+            width={20}
+            height={10}
+            alt="tamcon software solutions arrow icon"
+            className="relative left-0 transition-all duration-500 delay-75 group-hover:left-2"
+          />
         </button>
       </section>
     </Container>

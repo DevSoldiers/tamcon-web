@@ -7,17 +7,22 @@ import {
 import Container from "../_components/container";
 import { font_accent, font_body } from "@/app/fonts/fonts";
 import Link from "next/link";
+import { LinkArrowIcon } from "@/lib/icons";
+import { removeAllWhitespace } from "@/utils/sanitizer";
 
 export default function Footer() {
   return (
     <Container className="pt-[71.5px] pb-16 md:pt-[93.5px] md:pb-[90px] border-y-[1px] border-primary-25">
       <footer className="grid md:grid-cols-2 justify-baseline md:justify-center">
         <article className="mb-9 md:mb-8 address_wrapper grid gap-y-1">
-          <p
-            className={`${font_accent.className} text-4xl font-semibold text-gray-600 mb-6`}
-          >
-            {email}
-          </p>
+          <div className="flex gap-x-2">
+            <p
+              className={`${font_accent.className} text-2xl md:text-4xl font-semibold text-gray-600 mb-6`}
+            >
+              {email}
+            </p>
+            <LinkArrowIcon width={32} />
+          </div>
           <p
             className={`${font_body.className} text-base font-medium text-gray-600 mb-3`}
           >
@@ -33,7 +38,7 @@ export default function Footer() {
           {footer_nav_links?.map((link, key) => (
             <Link
               key={key}
-              href={"/"}
+              href={removeAllWhitespace(link).toLowerCase()}
               className={`${font_accent.className} text-base font-regular text-gray-600`}
             >
               {link}

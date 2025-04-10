@@ -13,7 +13,7 @@ export default function ServicesHero() {
         <span>]</span>
       </h1>
       <h1
-        className={`${font_header.className} max-w-[592px] text-4xl md:text-6xl font-bold text-base-0 text-left ml-auto leading-[110.00000000000001%] mt-12 md:mt-16`}
+        className={`${font_header.className} max-w-[592px] text-4xl md:text-6xl font-bold text-base-0 text-left ml-auto leading-[110.00000000000001%] mt-12 md:mt-16 tracking-[2%]`}
       >
         <span>[</span>
         Our expert team delivers tailored and high-performance solutions for

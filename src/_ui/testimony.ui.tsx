@@ -38,7 +38,7 @@ export default function Testimony() {
   return (
     <section className="bg-secondary-600 px-3.5 py-16 md:py-[120px]">
       <p
-        className={`${font_accent.className} text-2xl md:text-4xl font-extrabold text-center`}
+        className={`${font_accent.className} text-2xl md:text-4xl font-extrabold text-center text-gray-600`}
       >
         <span>[</span>
         What Our Clients Say

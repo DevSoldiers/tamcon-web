@@ -7,13 +7,13 @@ export function Hero() {
   return (
     <Container>
       <main className="md:grid grid-cols-2 gap-x-16 items-center">
-        <article className="left">
+        <article className="left max-w-[624px]">
           {hero_content?.map((content, key) => (
             <section className="flex flex-col" key={key}>
-              <article className="top_title_container mb-6 md:mb-0 flex flex-col w-fit md:gap-6">
+              <article className="top_title_container mb-6 md:mb-0 flex flex-col w-fit self-end">
                 <div className="self-start">
                   <h1
-                    className={`${font_header.className} uppercase font-bold text-6xl md:text-8xl text-primary-600 `}
+                    className={`${font_header.className} uppercase font-bold text-6xl md:text-8xl text-primary-600 tracking-[2px]`}
                   >
                     {content.title}
                   </h1>
@@ -36,7 +36,7 @@ export function Hero() {
               </div>
               {/* button */}
               <button
-                className={`${font_header.className} text-base font-bold text-gray-25 py-4 px-6 mt-6 bg-primary-600 max-w-32 rounded-xs hover:bg-white hover:text-primary-600`}
+                className={`${font_header.className} text-base font-bold text-gray-25 py-4 px-6 mt-6 bg-primary-600 max-w-32 rounded-xs hover:bg-white hover:text-primary-600 border-primary-600 border-[1px] text-nowrap cursor-pointer`}
               >
                 Book Meeting
               </button>
