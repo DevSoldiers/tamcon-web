@@ -18,14 +18,20 @@ export default function Projects() {
           .map((_, key) => (
             <article
               key={key}
-              className="projects_card py-8 md:pt-8 w-full h-[180px] md:h-[260px] overflow-clip border-b-[1px] border-b-primary-25"
+              className="projects_card py-8 md:pt-8 w-full h-[180px] md:h-[260px] overflow-clip border-b-[1px] border-b-primary-25 relative"
             >
               <h2
-                className={`${font_header.className} uppercase text-3xl md:text-5xl text-gray-500 font-extrabold`}
+                className={`${font_header.className} proj_adv_title uppercase pl-8 text-3xl md:text-5xl text-gray-500 font-extrabold`}
               >
                 Addis Neger Exhibition
               </h2>
-              <article className="flex-1 bg-blue-500 h-full projects_card_clip cursor-pointer"></article>
+              <article className="flex-1 bg-blue-500 h-full projects_card_clip cursor-pointer hover:absolute inset-0">
+                <h2
+                  className={`${font_header.className} pt-8 text-base-0 proj_adv_title uppercase pl-8 text-3xl md:text-5xl font-extrabold relative z-50`}
+                >
+                  [ Addis Neger Exhibition ]
+                </h2>
+              </article>
             </article>
           ))}
       </section>

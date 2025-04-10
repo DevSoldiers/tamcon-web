@@ -20,7 +20,7 @@ export default async function Navbar() {
         </Link>
         <Sidebar />
         <button className={`${font_header.className} contact_btn`}>
-          Contact Us
+          <Link href={"/contactus"}>Contact Us</Link>
         </button>
       </nav>
     </Container>
