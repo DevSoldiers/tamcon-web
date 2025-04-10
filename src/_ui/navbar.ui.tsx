@@ -3,10 +3,11 @@ import Image from "next/image";
 import Sidebar from "./sidebar.ui";
 import { font_header } from "@/app/fonts/fonts";
 import Link from "next/link";
+import { headers } from "next/headers";
 
-export default function Navbar() {
+export default async function Navbar() {
   return (
-    <Container>
+    <Container className="bg-primary-25">
       <nav className="flex justify-between items-center mt-6 mb-11">
         <Link className="w-[173px] aspect-auto-1" href={"/"}>
           <Image
@@ -19,7 +20,7 @@ export default function Navbar() {
         </Link>
         <Sidebar />
         <button className={`${font_header.className} contact_btn`}>
-          Contact Us
+          <Link href={"/contactus"}>Contact Us</Link>
         </button>
       </nav>
     </Container>

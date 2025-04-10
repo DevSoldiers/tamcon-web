@@ -10,7 +10,7 @@ export default function AboutMissionVision() {
         <Divider className="py-16 md:py-[150px] md:grid-cols-[1fr_auto_1fr] gap-y-16 md:gap-x-16">
           <article className="mission flex flex-col gap-y-12">
             <h2
-              className={`${font_accent.className} text-3xl md:text-4xl font-bold text-base-0`}
+              className={`${font_accent.className} text-3xl md:text-4xl font-extrabold text-base-0`}
             >
               <span>[</span>
               Mission
@@ -36,7 +36,7 @@ export default function AboutMissionVision() {
           <div className="w-full h-[1px] md:w-[1px] md:h-full bg-primary-400"></div>
           <article className="vision flex flex-col gap-y-12">
             <h2
-              className={`${font_accent.className} text-3xl md:text-4xl font-bold text-base-0`}
+              className={`${font_accent.className} text-3xl md:text-4xl font-extrabold text-base-0`}
             >
               <span>[</span>
               Vision

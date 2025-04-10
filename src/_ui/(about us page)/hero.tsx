@@ -5,7 +5,7 @@ export default function AboutHero() {
   return (
     <section className="hero">
       <h1
-        className={`${font_accent} text-2xl md:text-4xl font-bold text-primary-600 text-center`}
+        className={`${font_accent.className} text-2xl md:text-4xl font-extrabold text-primary-600 text-center`}
       >
         <span>[</span>
         About TAMCON

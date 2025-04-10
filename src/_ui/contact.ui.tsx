@@ -1,22 +1,23 @@
 import ContactForm from "@/_components/Contact.form";
 import ContactLeftSection from "@/_components/Contact.leftsection";
-import Container from "@/_components/container";
 import Divider from "@/_components/Divider";
-import Image from "next/image";
+import Head from "next/head";
+import Script from "next/script";
 
 export default function ContactUI() {
   return (
     <Divider className="gap-x-10 max-md:gap-y-12">
-      <ContactLeftSection className="bg-primary-600 max-h-[640px] h-full flex justify-center items-center">
-        <Image
-          src={"/others/doughnut.png"}
-          height={200}
-          width={200}
-          className="aspect-auto w-full scale-75"
-          alt="doughnut_icon"
-        />
+      <ContactLeftSection className="bg-primary-600 h-full flex justify-center items-center">
+        <Head>
+          <title>First Post</title>
+        </Head>
+        <canvas id="a" width="500" height="500" className="w-full" />
+
+        {/* Load external scripts after the page is interactive */}
+        <Script src="/js/unminified/lib.js" strategy="afterInteractive" />
+        <Script src="/js/unminified/index.js" strategy="afterInteractive" />
       </ContactLeftSection>
-      <ContactForm />
+      <ContactForm className="max-w-[592px]" />
     </Divider>
   );
 }

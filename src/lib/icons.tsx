@@ -1,0 +1,43 @@
+type IconProps = React.SVGProps<SVGSVGElement>;
+
+export function RightArrowIcon(props: IconProps) {
+  return (
+    <svg
+      width="14"
+      height="10"
+      viewBox="0 0 14 10"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M7.96967 1.53033C7.67678 1.23744 7.67678 0.762563 7.96967 0.46967C8.26256 0.176777 8.73744 0.176777 9.03033 0.46967L13.0303 4.46967C13.3232 4.76256 13.3232 5.23744 13.0303 5.53033L9.03033 9.53033C8.73744 9.82322 8.26256 9.82322 7.96967 9.53033C7.67678 9.23744 7.67678 8.76256 7.96967 8.46967L10.6893 5.75H1C0.585787 5.75 0.25 5.41421 0.25 5C0.25 4.58579 0.585787 4.25 1 4.25H10.6893L7.96967 1.53033Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
+export function LinkArrowIcon(props: IconProps) {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        width="32"
+        height="32"
+        fill="white"
+        fillOpacity="0.01"
+        style={{ mixBlendMode: "multiply" }}
+      />
+      <path
+        d="M10 6V8H22.59L6 24.59L7.41 26L24 9.41V22H26V6H10Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}

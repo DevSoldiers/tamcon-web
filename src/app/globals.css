@@ -14,9 +14,9 @@
   --color-gray-900: #0c0c0c;
   --color-gray-800: #0f0f0f;
   --color-gray-700: #1c1c1c;
-  --color-gray-600: #2c2c2b;
-  --color-gray-500: #2e2e2e;
-  --color-gray-400: #707070;
+  --color-gray-600: #2C2B2B;
+  --color-gray-500: #525251;
+  --color-gray-400: #7D7D7C;
   --color-gray-300: #c0c0bf;
   --color-gray-200: #dcdcdc;
   --color-gray-100: #e3e3e3;
@@ -29,12 +29,12 @@
   --color-primary-700: #242298;
   --color-primary-600: #2D2E83;
   --color-primary-500: #3f379c;
-  --color-primary-400: #603f84;
+  --color-primary-400: #8081B4;
   --color-primary-300: #aaaacd;
   --color-primary-200: #efefef;
-  --color-primary-100: #d3d3e5;
+  --color-primary-100: #d3d4e5;
   --color-primary-50: #e8e8f2;
-  --color-primary-25: #f2f2f8;
+  --color-primary-25: #f8f8f8;
 
   /* Secondary Shades */
   --color-secondary-900: #4a3109;
@@ -90,6 +90,20 @@
   .animate-float {
     animation: float 3s ease-in-out infinite;
   }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 15s linear infinite;
+  }
 }
 
 @layer components {
@@ -103,11 +117,12 @@
   }
 
   .projects_card_clip {
-    background: orange;
     background: url("/others/addis_neger.svg") no-repeat 95% bottom;
     background-size: 25%;
     clip-path: circle(19% at 85% 100%);
-    transition: 1s;
+    position: absolute;
+    inset: 0;
+    transition: .3s ease-in;
   }
 
   @media (max-width: 768px) {

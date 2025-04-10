@@ -8,7 +8,7 @@ export default function Faq() {
     <Container className="max-w-full bg-primary-25 py-16 md:py-[120px]">
       <Container className="px-0 max-w-[1072px]">
         <h1
-          className={`${font_accent.className} text-4xl font-bold text-primary-600 text-center`}
+          className={`${font_accent.className} text-4xl font-extrabold text-primary-600 text-center`}
         >
           <span>[</span>
           FAQS

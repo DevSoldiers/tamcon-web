@@ -2,6 +2,7 @@ import Container from "@/_components/container";
 import CardGrid from "@/_components/servicesAnimated.card";
 import SystemofTheFuture from "@/_components/systemofthefuture";
 import { font_accent, font_body, font_header } from "@/app/fonts/fonts";
+import { RightArrowIcon } from "@/lib/icons";
 import Image from "next/image";
 
 export default function Services() {
@@ -31,7 +32,7 @@ export default function Services() {
       <SystemofTheFuture />
       <Container className="flex flex-col max-md:max-w-full w-full text-base-0  border-t-1 border-primary-400 py-[90px] md:py-[150px] bg-transparent">
         <h3
-          className={`${font_accent.className} text-2xl md:text-4xl font-bold mb-16`}
+          className={`${font_accent.className} text-2xl md:text-4xl font-extrabold mb-16`}
         >
           [Services]
         </h3>
@@ -52,9 +53,15 @@ export default function Services() {
             ))}
         </div>
         <button
-          className={`${font_header.className} text-base-0 border-white border-2 text-base font-bold bg-primary-600 px-6 py-4 rounded-xs max-w-[151px] w-full col-span-2 self-end mt-16`}
+          className={`${font_header.className} cursor-pointer group flex gap-2 items-center text-base-0 border-white border-2 text-base font-bold bg-primary-600 px-6 py-4 rounded-xs max-w-[151px] w-full col-span-2 self-end mt-16 mb-[90px] md:mb-[93.25px] hover:bg-primary-25 hover:text-primary-600`}
         >
           Learn More
+          <RightArrowIcon
+            width={20}
+            height={10}
+            color="#ffffff"
+            className="relative left-0 transition-all duration-500 delay-75 group-hover:left-2 group-hover:text-primary-600"
+          />
         </button>
       </Container>
     </Container>
