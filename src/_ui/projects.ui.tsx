@@ -1,24 +1,31 @@
+import * as motion from "motion/react-client";
+
 import Container from "@/_components/container";
 import { font_accent, font_header } from "@/app/fonts/fonts";
 import { RightArrowIcon } from "@/lib/icons";
-import Image from "next/image";
 
 export default function Projects() {
   return (
     <Container className="mt-9 md:mt-[90px] bg-primary-25 flex flex-col">
-      <h2
+      <motion.h2
         className={`${font_accent.className} text-2xl md:text-4xl font-extrabold text-primary-600 mb-8`}
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
       >
         <span>{"["}</span>Selected Projects<span>{"]"}</span>
-      </h2>
+      </motion.h2>
 
       <section className="projects_wrapper flex flex-col">
         {Array(3)
           .fill(0)
           .map((_, key) => (
-            <article
+            <motion.article
               key={key}
               className="projects_card py-8 md:pt-8 w-full h-[180px] md:h-[260px] overflow-clip border-b-[1px] border-b-primary-25 relative"
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
             >
               <h2
                 className={`${font_header.className} proj_adv_title uppercase pl-8 text-3xl md:text-5xl text-gray-500 font-extrabold`}
@@ -32,7 +39,7 @@ export default function Projects() {
                   [ Addis Neger Exhibition ]
                 </h2>
               </article>
-            </article>
+            </motion.article>
           ))}
       </section>
 

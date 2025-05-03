@@ -1,17 +1,13 @@
-"use client";
-
 import * as motion from "motion/react-client";
+
 import Container from "@/_components/container";
 import { hero_content } from "@/_content/hero.content";
 import { font_accent, font_body, font_header } from "@/app/fonts/fonts";
 import Image from "next/image";
-import { useDragControls } from "motion/react";
 
 export function Hero() {
-  const controls = useDragControls();
-
   return (
-    <Container>
+    <Container className="">
       <main className="md:grid grid-cols-2 gap-x-16 items-center">
         <article className="left max-w-[624px]">
           {hero_content?.map((content, key) => (

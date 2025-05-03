@@ -1,3 +1,6 @@
+import * as motion from "motion/react-client";
+import { MotionProps } from "motion/react";
+
 import { JSX, ReactNode } from "react";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -9,17 +12,19 @@ function cn(...inputs: Array<string | false | null | undefined>) {
 type ContainerProps = {
   children: ReactNode;
   className?: string;
-};
+} & MotionProps;
 
 export default function Container({
   children,
   className,
+  ...motionProps
 }: ContainerProps): JSX.Element {
   return (
-    <section
+    <motion.section
       className={cn("px-4 box-border max-w-[1440px] w-full mx-auto", className)}
+      {...motionProps}
     >
       {children}
-    </section>
+    </motion.section>
   );
 }
