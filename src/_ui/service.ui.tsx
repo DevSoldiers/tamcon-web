@@ -1,7 +1,6 @@
 import Container from "@/_components/container";
-import CardGrid from "@/_components/servicesAnimated.card";
 import SystemofTheFuture from "@/_components/systemofthefuture";
-import { font_accent, font_body, font_header } from "@/app/fonts/fonts";
+import { font_accent, font_header } from "@/app/fonts/fonts";
 import Image from "next/image";
 
 export default function Services() {

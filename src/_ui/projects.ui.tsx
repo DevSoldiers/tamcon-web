@@ -1,6 +1,5 @@
 import Container from "@/_components/container";
 import { font_accent, font_header } from "@/app/fonts/fonts";
-import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -15,7 +14,10 @@ export default function Projects() {
         {Array(3)
           .fill(0)
           .map((_, key) => (
-            <article key={key} className="projects_card py-8 md:pt-8 w-full h-[180px] md:h-[260px] overflow-clip border-b-[1px] border-b-primary-25">
+            <article
+              key={key}
+              className="projects_card py-8 md:pt-8 w-full h-[180px] md:h-[260px] overflow-clip border-b-[1px] border-b-primary-25"
+            >
               <h2
                 className={`${font_header.className} uppercase text-3xl md:text-5xl text-gray-500`}
               >
