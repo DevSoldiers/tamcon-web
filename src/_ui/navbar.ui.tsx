@@ -3,7 +3,6 @@ import Image from "next/image";
 import Sidebar from "./sidebar.ui";
 import { font_header } from "@/app/fonts/fonts";
 import Link from "next/link";
-import { headers } from "next/headers";
 
 export default async function Navbar() {
   return (

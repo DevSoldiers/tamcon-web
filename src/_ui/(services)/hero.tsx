@@ -1,6 +1,5 @@
 import Container from "@/_components/container";
-import { font_accent, font_body, font_header } from "@/app/fonts/fonts";
-import Image from "next/image";
+import { font_accent, font_header } from "@/app/fonts/fonts";
 
 export default function ServicesHero() {
   return (

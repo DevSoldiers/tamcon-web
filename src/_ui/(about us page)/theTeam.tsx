@@ -1,6 +1,6 @@
 "use client";
 import Container from "@/_components/container";
-import { font_accent, font_body, font_header } from "@/app/fonts/fonts";
+import { font_accent, font_header } from "@/app/fonts/fonts";
 import { theTeam } from "@/_content/about_content";
 
 export default function TheTeam() {

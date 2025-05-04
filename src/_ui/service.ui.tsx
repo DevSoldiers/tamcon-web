@@ -1,9 +1,8 @@
 import * as motion from "motion/react-client";
 
 import Container from "@/_components/container";
-import CardGrid from "@/_components/servicesAnimated.card";
 import SystemofTheFuture from "@/_components/systemofthefuture";
-import { font_accent, font_body, font_header } from "@/app/fonts/fonts";
+import { font_accent, font_header } from "@/app/fonts/fonts";
 import { RightArrowIcon } from "@/lib/icons";
 import Image from "next/image";
 import { OUR_SERVICES } from "@/_content/services_content";
