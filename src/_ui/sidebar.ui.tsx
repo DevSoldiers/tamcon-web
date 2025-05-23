@@ -11,6 +11,12 @@ export default function Sidebar() {
   const [open, setOpen] = useState(false);
 
   const toggle = () => setOpen((prev) => !prev);
+  // prevent scroll when sidebar is open
+  if (open) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
 
   return (
     <aside>
@@ -26,7 +32,7 @@ export default function Sidebar() {
       />
 
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg transition-transform duration-300 ease-in-out flex flex-col ${
+        className={`z-10 md:hidden fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg transition-transform duration-300 ease-in-out flex flex-col ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >

@@ -7,8 +7,14 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <Container className="">
-      <main className="md:grid grid-cols-2 gap-x-16 items-center">
+    <Container
+      className="max-md:pt-[46px] max-md:pb-[48px]
+    max-md:bg-[url('/others/hero_float.svg')] max-md:bg-no-repeat max-md:bg-center
+    max-md:bg-[linear-gradient(0deg,rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url('/others/hero_float.svg')]
+    max-md:bg-[length:100%_100%]
+    "
+    >
+      <main className="overflow-x-hidden md:grid grid-cols-2 gap-x-16 items-center">
         <article className="left max-w-[624px]">
           {hero_content?.map((content, key) => (
             <section className="flex flex-col" key={key}>
@@ -53,7 +59,7 @@ export function Hero() {
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.7, duration: 0.6, ease: "easeOut" }}
-                className={`${font_header.className} text-base font-bold text-gray-25 py-4 px-6 mt-6 bg-primary-600 max-w-32 rounded-xs hover:bg-white hover:text-primary-600 border-primary-600 border-[1px] text-nowrap cursor-pointer`}
+                className={`${font_header.className} text-base font-bold text-gray-25 py-4 px-6 mt-8 bg-primary-600 max-w-32 rounded-xs hover:bg-white hover:text-primary-600 border-primary-600 border-[1px] text-nowrap cursor-pointer`}
               >
                 Book Meeting
               </motion.button>
@@ -74,7 +80,7 @@ export function Hero() {
         >
           <Image
             src="/others/hero_float.svg"
-            className="w-full aspect-auto animate-float"
+            className="w-40 sm:w-60 md:w-96 lg:w-[600px] aspect-auto animate-float"
             alt="tamcon_floating_logo"
             width={0}
             height={0}
