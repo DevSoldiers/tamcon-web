@@ -9,27 +9,27 @@ import { OUR_SERVICES } from "@/_content/services_content";
 
 export default function Services() {
   return (
-    <Container className="bg-primary-600 max-w-full service-top-gear px-0 relative">
+    <Container className="bg-primary-600 service-top-gear relative lg:px-0">
       <Image
         src="/others/mobile_top_gear.svg"
         alt="closer-gear"
         width={0}
         height={0}
-        className="md:hidden w-full aspect-auto absolute top-0"
+        className="md:hidden w-full aspect-auto absolute -top-1 left-0"
       />
       <Image
         src="/others/desktop_top_gear.svg"
         alt="closer-gear"
         width={0}
         height={0}
-        className="hidden md:block w-full aspect-auto absolute top-0"
+        className="hidden md:block w-full aspect-auto absolute -top-8 left-0"
       />
       <Image
         src="/others/mobile_bottom_gear.svg"
         alt="closer-gear"
         width={0}
         height={0}
-        className="w-full aspect-auto absolute bottom-0"
+        className="w-full aspect-auto absolute lg:-bottom-8 bottom-0 left-0"
       />
       <SystemofTheFuture />
       <Container className="flex flex-col max-md:max-w-full w-full text-base-0  border-t-1 border-primary-400 py-[90px] md:py-[150px] bg-transparent">

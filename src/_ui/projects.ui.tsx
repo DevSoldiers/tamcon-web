@@ -46,7 +46,7 @@ export default function Projects() {
       <button
         className={`${font_header.className} cursor-pointer group flex gap-2 items-center text-base-0 border-primary-600 border-2 text-base font-bold bg-primary-600 px-6 py-4 rounded-xs max-w-[151px] w-full col-span-2 self-end mt-16 mb-[90px] md:mb-[93.25px] hover:bg-primary-25 hover:text-primary-600`}
       >
-        Learn More
+        See More
         <RightArrowIcon
           width={20}
           height={10}

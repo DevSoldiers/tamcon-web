@@ -5,12 +5,23 @@ import { navLinks } from "@/_content/nav_content";
 import { font_header } from "@/app/fonts/fonts";
 import { removeAllWhitespace } from "@/utils/sanitizer";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
 
   const toggle = () => setOpen((prev) => !prev);
+  // prevent scroll when sidebar is open
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      document.body.style.overflow = open ? "hidden" : "auto";
+    }
+
+    // Clean up when component
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [open]);
 
   return (
     <aside>
@@ -26,7 +37,7 @@ export default function Sidebar() {
       />
 
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg transition-transform duration-300 ease-in-out flex flex-col ${
+        className={`z-10 md:hidden fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg transition-transform duration-300 ease-in-out flex flex-col ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >

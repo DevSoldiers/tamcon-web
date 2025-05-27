@@ -5,7 +5,7 @@ import { font_accent, font_body } from "@/app/fonts/fonts";
 
 export default function AboutMissionVision() {
   return (
-    <Container className="max-w-full bg-primary-600 mt-12 md:mt-[90px]">
+    <Container className="max-w-full bg-primary-600 mt-12 md:mt-[90px] lg:px-0">
       <Container>
         <Divider className="py-16 md:py-[150px] md:grid-cols-[1fr_auto_1fr] gap-y-16 md:gap-x-16">
           <article className="mission flex flex-col gap-y-12">

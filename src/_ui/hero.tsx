@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <Container className="">
+    <Container className="max-md:pb-5">
       <main className="md:grid grid-cols-2 gap-x-16 items-center">
         <article className="left max-w-[624px]">
           {hero_content?.map((content, key) => (
@@ -20,14 +20,14 @@ export function Hero() {
               >
                 <div className="self-start">
                   <h1
-                    className={`${font_header.className} uppercase font-bold text-6xl md:text-8xl text-primary-600 tracking-[2px]`}
+                    className={`max-[320px]:text-xl ${font_header.className} uppercase font-bold text-6xl md:text-8xl text-primary-600 tracking-[2px]`}
                   >
                     {content.title}
                   </h1>
                 </div>
                 <div className="self-end max-w-[533px]">
                   <h1
-                    className={`${font_accent.className} uppercase font-extrabold text-5xl md:text-6xl text-gray-400 text-right text-wrap`}
+                    className={`max-[320px]:text-xl ${font_accent.className} uppercase font-extrabold text-5xl md:text-6xl text-gray-400 text-right text-wrap`}
                   >
                     {content.subTitle}
                   </h1>
@@ -74,7 +74,7 @@ export function Hero() {
         >
           <Image
             src="/others/hero_float.svg"
-            className="w-full aspect-auto animate-float"
+            className="w-2xl aspect-auto animate-float"
             alt="tamcon_floating_logo"
             width={0}
             height={0}

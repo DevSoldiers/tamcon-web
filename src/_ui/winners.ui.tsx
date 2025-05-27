@@ -23,7 +23,7 @@ export default function Winners() {
             className="relative"
           >
             <h2
-              className={`${font_header.className} text-6xl font-bold text-primary-600 uppercase`}
+              className={`max-[320px]:text-3xl ${font_header.className} text-6xl font-bold text-primary-600 uppercase`}
             >
               Digitalizing Ethiopian Lottery!
             </h2>

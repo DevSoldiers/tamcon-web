@@ -21,7 +21,8 @@ export default function Container({
 }: ContainerProps): JSX.Element {
   return (
     <motion.section
-      className={cn("px-4 box-border max-w-[1440px] w-full mx-auto", className)}
+      // className={cn("px-4 box-border max-w-[1440px] w-full mx-auto", className)}
+      className={cn("px-4 lg:px-[90px] box-border w-full mx-auto", className)}
       {...motionProps}
     >
       {children}
