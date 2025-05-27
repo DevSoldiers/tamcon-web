@@ -3,7 +3,6 @@ import Image from "next/image";
 import Sidebar from "./sidebar.ui";
 import { font_header } from "@/app/fonts/fonts";
 import Link from "next/link";
-import { headers } from "next/headers";
 
 export default async function Navbar() {
   return (
@@ -11,7 +10,7 @@ export default async function Navbar() {
       <nav className="flex justify-between items-center mt-6 mb-11">
         <Link className="w-[173px] aspect-auto-1" href={"/"}>
           <Image
-            alt="tamcon logo"
+            alt="Tamcon Software Solutions"
             width={0}
             height={0}
             src="/Logo/tamcon.logo.svg"

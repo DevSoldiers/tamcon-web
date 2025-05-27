@@ -81,7 +81,7 @@ export default function Testimony() {
             return (
               <article
                 key={index}
-                className={`bg-secondary-50 rounded-3xl p-6 md:p-9 absolute top-0 left-0 w-full h-full transition-all duration-500 ${
+                className={`bg-secondary-50 overflow-y-auto rounded-3xl p-6 md:p-9 absolute top-0 left-0 w-full h-full transition-all duration-500 ${
                   position === 0 ? "cursor-auto" : "cursor-pointer"
                 }`}
                 style={{

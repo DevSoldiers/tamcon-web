@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Footer_Logo_section() {
   return (
-    <Container className="grid gap-y-16 md:gap-y-[90px] pb-16 bg-primary-25">
+    <Container className="grid gap-y-16 md:gap-y-[90px] pb-16 bg-primary-25 max-w-full">
       <Image
         src={"/Logo/tamcon.logo.svg"}
         width={0}

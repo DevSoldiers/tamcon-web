@@ -1,11 +1,11 @@
 "use client";
 import Container from "@/_components/container";
-import { font_accent, font_body, font_header } from "@/app/fonts/fonts";
+import { font_accent, font_header } from "@/app/fonts/fonts";
 import { theTeam } from "@/_content/about_content";
 
 export default function TheTeam() {
   return (
-    <Container className="pt-16 md:pb-[90px] md:pt-[90px] bg-secondary-600 max-w-full ">
+    <Container className="pt-16 md:pb-[90px] md:pt-[90px] bg-secondary-600 max-w-full lg:px-0">
       <Container>
         <h2
           className={`${font_accent.className} text-2xl md:text-4xl text-gray-600 text-center font-extrabold`}

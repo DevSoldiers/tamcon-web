@@ -26,6 +26,7 @@ export function LinkArrowIcon(props: IconProps) {
       viewBox="0 0 32 32"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <rect
         width="32"
