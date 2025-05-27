@@ -17,7 +17,7 @@ export default function Footer() {
         <article className="mb-9 md:mb-8 address_wrapper grid gap-y-1">
           <div className="flex gap-x-2">
             <p
-              className={`${font_accent.className} text-2xl md:text-4xl font-semibold text-gray-600 mb-6`}
+              className={`${font_accent.className} max-[325px]:text-[50%] text-2xl md:text-4xl font-semibold text-gray-600 mb-6`}
             >
               {email}
             </p>
@@ -39,7 +39,7 @@ export default function Footer() {
             <Link
               key={key}
               href={removeAllWhitespace(link).toLowerCase()}
-              className={`${font_accent.className} text-base font-regular text-gray-600`}
+              className={`max-[320px]:text-[50%] ${font_accent.className} text-base font-regular text-gray-600`}
             >
               {link}
             </Link>

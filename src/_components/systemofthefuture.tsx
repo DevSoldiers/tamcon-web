@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function SystemofTheFuture() {
   return (
-    <Container className="max-md:max-w-full w-full pt-[90px] pb-10 md:py-[150px] text-base-0 overflow-clip">
+    <Container className="pt-[90px] pb-10 md:py-[150px] text-base-0 overflow-clip">
       <motion.section
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 50, opacity: 0 }}

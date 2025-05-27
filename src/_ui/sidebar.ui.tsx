@@ -5,18 +5,23 @@ import { navLinks } from "@/_content/nav_content";
 import { font_header } from "@/app/fonts/fonts";
 import { removeAllWhitespace } from "@/utils/sanitizer";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
 
   const toggle = () => setOpen((prev) => !prev);
   // prevent scroll when sidebar is open
-  if (open) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      document.body.style.overflow = open ? "hidden" : "auto";
+    }
+
+    // Clean up when component
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [open]);
 
   return (
     <aside>
