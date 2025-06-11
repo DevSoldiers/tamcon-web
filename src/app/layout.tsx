@@ -16,9 +16,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tamcon Software Solutions",
+  title: "Tamcon Software Solutions | Best Software Company in Ethiopia",
   description:
-    "TAMCON is a cutting-edge software solutions company specializing in the design, development, and marketing of innovative tech projects. We disrupt industries, streamline processes, and create IMPACT.",
+    "Tamcon Software Solutions is a leading software company in Addis Ababa, Ethiopia. We provide innovative software development, cloud, DevOps, UI/UX, and consulting services. Recognized among the best software companies in Ethiopia and top software companies in Addis Ababa.",
+  keywords: [
+    "Tamcon Software Solutions",
+    "Best software companies in Ethiopia",
+    "Top software companies in Addis Ababa",
+    "Software development Ethiopia",
+    "IT consulting Addis Ababa",
+    "Cloud solutions Ethiopia",
+    "UI/UX design Ethiopia",
+    "DevOps Ethiopia",
+    "Tech companies Ethiopia",
+    "Custom software Addis Ababa",
+  ],
+  openGraph: {
+    title: "Tamcon Software Solutions | Best Software Company in Ethiopia",
+    description:
+      "Tamcon Software Solutions is a leading software company in Addis Ababa, Ethiopia. We provide innovative software development, cloud, DevOps, UI/UX, and consulting services. Recognized among the best software companies in Ethiopia and top software companies in Addis Ababa.",
+    url: "https://tamcon.software/",
+    siteName: "Tamcon Software Solutions",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tamcon Software Solutions | Best Software Company in Ethiopia",
+    description:
+      "Tamcon Software Solutions is a leading software company in Addis Ababa, Ethiopia. We provide innovative software development, cloud, DevOps, UI/UX, and consulting services. Recognized among the best software companies in Ethiopia and top software companies in Addis Ababa.",
+  },
 };
 
 export default function RootLayout({
