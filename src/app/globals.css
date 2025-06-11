@@ -123,6 +123,7 @@
     position: absolute;
     inset: 0;
     transition: .3s ease-in;
+    margin-right: -25px;
   }
 
   @media (max-width: 768px) {
@@ -130,15 +131,21 @@
       background: url("/others/addis_neger.svg") no-repeat 95% bottom;
       clip-path: circle(35% at 74% 100%);
       background-size: auto;
+      margin-right: auto;
     }
 
     .advert_section {
       background-size: contain;
       background-position: center bottom;
     }
+
+    .projects_card_clip {
+      clip-path: circle(100%);
+    }
+
   }
 
-  .projects_card_clip:hover {
+  .projects_card:hover .projects_card_clip {
     clip-path: circle(100%);
   }
 

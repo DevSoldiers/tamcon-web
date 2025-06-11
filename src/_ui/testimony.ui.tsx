@@ -46,50 +46,67 @@ export default function Testimony() {
       </p>
 
       <section className="max-w-[1132px] mx-auto mt-[105px] md:mt-[120px] flex flex-col gap-y-20 md:flex-row md:gap-16 relative">
-        {/* Testimonial cards container */}
-        <div className="relative w-full max-md:w-[95%] h-[400px] md:h-[500px]">
+        <div
+          className="relative w-full max-md:w-[95%] h-[400px] md:h-[500px] perspective-[1000px] group"
+          onMouseEnter={(e) => {
+            // On hover, slant all cards
+            const articles = e.currentTarget.querySelectorAll("article");
+            articles.forEach((el, idx) => {
+              if (idx < currentIndex) {
+                el.style.transform = "rotate(-12deg)";
+              } else if (idx > currentIndex) {
+                el.style.transform = "rotate(12deg)";
+              } else {
+                el.style.transform = "rotate(2deg)";
+              }
+            });
+          }}
+          onMouseLeave={(e) => {
+            // On leave, reset all cards
+            const articles = e.currentTarget.querySelectorAll("article");
+            articles.forEach((el, idx) => {
+              if (idx < currentIndex) {
+                el.style.transform = "rotate(-6deg)";
+              } else if (idx > currentIndex) {
+                el.style.transform = "rotate(6deg)";
+              } else {
+                el.style.transform = "rotate(0deg)";
+              }
+            });
+          }}
+        >
           {testimonials.map((testimonial, index) => {
-            // Calculate position and rotation for stacked cards
-            const position =
-              (index - currentIndex + testimonials.length) %
-              testimonials.length;
-            let transform = "";
-            let zIndex = 0;
-            let opacity = 1;
-
-            if (position === 0) {
-              // Current card (front and center)
-              zIndex = 10;
-            } else if (position === 1 || position === testimonials.length - 1) {
-              // Adjacent cards (slightly rotated and offset)
-              transform =
-                position === 1
-                  ? "rotate(3deg) translateX(20px)"
-                  : "rotate(-3deg) translateX(-20px)";
-              zIndex = 5;
-              opacity = 0.8;
+            const isActive = index === currentIndex;
+            // Set initial and hover rotation for each card
+            let initialRotate = 0;
+            let hoverRotate = 0;
+            if (!isActive) {
+              // Stacked cards: left and right
+              if (index < currentIndex) {
+                initialRotate = -6;
+                hoverRotate = -12;
+              } else if (index > currentIndex) {
+                initialRotate = 6;
+                hoverRotate = 12;
+              }
             } else {
-              // Other cards (more rotated and further offset)
-              transform =
-                position < currentIndex
-                  ? "rotate(-8deg) translateX(-40px) scale(0.9)"
-                  : "rotate(8deg) translateX(40px) scale(0.9)";
-              zIndex = 1;
-              opacity = 0.6;
+              // Active card
+              initialRotate = 0;
+              hoverRotate = 2;
             }
-
             return (
               <article
                 key={index}
-                className={`bg-secondary-50 overflow-y-auto rounded-3xl p-6 md:p-9 absolute top-0 left-0 w-full h-full transition-all duration-500 ${
-                  position === 0 ? "cursor-auto" : "cursor-pointer"
+                data-index={index}
+                className={`absolute top-0 left-0 w-full h-full bg-secondary-50 rounded-3xl p-6 md:p-9 border border-black transition-transform duration-700 ease-in-out ${
+                  isActive
+                    ? "z-10 opacity-100 scale-100"
+                    : "z-0 opacity-100 scale-100"
                 }`}
                 style={{
-                  transform,
-                  zIndex,
-                  opacity,
+                  transformStyle: "preserve-3d",
+                  transform: `rotate(${initialRotate}deg)`,
                 }}
-                onClick={() => position !== 0 && setCurrentIndex(index)}
               >
                 <p
                   className={`${font_body.className} text-xl md:text-3xl text-gray-600 font-medium p-6 md:p-9`}
@@ -116,7 +133,6 @@ export default function Testimony() {
           })}
         </div>
 
-        {/* arrow icons */}
         <article className="self-end flex gap-x-6 md:flex-col md:gap-y-12">
           <button
             onClick={handlePrev}
