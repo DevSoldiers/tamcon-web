@@ -136,7 +136,7 @@ export default function Testimony() {
         <article className="self-end flex gap-x-6 md:flex-col md:gap-y-12">
           <button
             onClick={handlePrev}
-            className="rounded-full bg-secondary-700 w-12 h-12 aspect-auto flex justify-center items-center hover:bg-secondary-800 transition-colors"
+            className="cursor-pointer rounded-full bg-secondary-700 w-12 h-12 flex justify-center items-center hover:bg-secondary-800 transition-colors"
           >
             <Image
               alt="arrow-top"
@@ -148,7 +148,7 @@ export default function Testimony() {
           </button>
           <button
             onClick={handleNext}
-            className="rounded-full bg-secondary-700 w-12 h-12 aspect-auto flex justify-center items-center hover:bg-secondary-800 transition-colors"
+            className="cursor-pointer rounded-full bg-secondary-700 w-12 h-12 flex justify-center items-center hover:bg-secondary-800 transition-colors"
           >
             <Image
               alt="arrow-bottom"
