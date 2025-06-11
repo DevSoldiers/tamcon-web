@@ -79,20 +79,16 @@ export default function Testimony() {
             const isActive = index === currentIndex;
             // Set initial and hover rotation for each card
             let initialRotate = 0;
-            let hoverRotate = 0;
             if (!isActive) {
               // Stacked cards: left and right
               if (index < currentIndex) {
                 initialRotate = -6;
-                hoverRotate = -12;
               } else if (index > currentIndex) {
                 initialRotate = 6;
-                hoverRotate = 12;
               }
             } else {
               // Active card
               initialRotate = 0;
-              hoverRotate = 2;
             }
             return (
               <article
