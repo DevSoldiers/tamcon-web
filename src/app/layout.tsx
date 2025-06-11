@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   description:
     "Tamcon Software Solutions is a leading software company in Addis Ababa, Ethiopia. We provide innovative software development, cloud, DevOps, UI/UX, and consulting services. Recognized among the best software companies in Ethiopia and top software companies in Addis Ababa.",
   keywords: [
+    "Tamcon",
     "Tamcon Software Solutions",
     "Best software companies in Ethiopia",
     "Top software companies in Addis Ababa",
@@ -48,6 +49,49 @@ export const metadata: Metadata = {
   },
 };
 
+// Add JSON-LD for organization and location
+function JsonLdOrganization() {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Tamcon Software Solutions",
+          alternateName: "Tamcon",
+          url: "https://tamcon.software/",
+          logo: "https://tamcon.software/favicon.svg",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress:
+              "Bedesta Building | Dembel | በደስታ ህንጻ, 9th floor",
+            addressLocality: "Addis Ababa",
+            addressCountry: "ET",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 9.0084, // approximate for Addis Ababa
+            longitude: 38.7613,
+          },
+          hasMap: "https://maps.app.goo.gl/M9ZuTNg35o1VoJy1A",
+          contactPoint: [
+            {
+              "@type": "ContactPoint",
+              contactType: "customer support",
+              email: "info@tamcon.software",
+              url: "https://tamcon.software/contactus",
+            },
+          ],
+          sameAs: [
+            "https://maps.app.goo.gl/M9ZuTNg35o1VoJy1A",
+          ],
+        }),
+      }}
+    />
+  );
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -55,6 +99,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <JsonLdOrganization />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary-25 overflow-x-hidden`}
       >
