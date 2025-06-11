@@ -2,9 +2,16 @@ import Container from "@/_components/container";
 import { font_accent, font_header } from "../fonts/fonts";
 import { projects_list } from "@/_content/projects_content";
 
+export const metadata = {
+  title: "Projects | Tamcon Software Solutions",
+  description:
+    "See featured software projects by Tamcon Software Solutions, a top software company in Ethiopia.",
+};
+
 export default function FeaturedProjects() {
   return (
     <Container>
+      <h1 className="sr-only">Featured Projects - Tamcon Software Solutions</h1>
       <h2
         className={`${font_accent.className} text-2xl md:text-4xl font-extrabold`}
       >

@@ -22,7 +22,7 @@ export default function Projects() {
           .map((_, key) => (
             <motion.article
               key={key}
-              className="projects_card py-8 md:pt-8 w-full h-[180px] md:h-[260px] overflow-clip border-b-[1px] border-b-primary-25 relative"
+              className="projects_card py-8 md:pt-8 w-full h-[180px] md:h-[260px] overflow-clip border-b-[1px] border-b-gray-200 relative"
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
@@ -34,7 +34,7 @@ export default function Projects() {
               </h2>
               <article className="flex-1 bg-blue-500 h-full projects_card_clip cursor-pointer hover:absolute inset-0">
                 <h2
-                  className={`${font_header.className} pt-8 text-base-0 proj_adv_title uppercase pl-8 text-3xl md:text-5xl font-extrabold relative z-50`}
+                  className={`${font_header.className} max-md:pt-2 max-md:pl-2 pt-8 text-base-0 proj_adv_title uppercase pl-8 text-3xl md:text-5xl font-extrabold relative z-50`}
                 >
                   [ Addis Neger Exhibition ]
                 </h2>
