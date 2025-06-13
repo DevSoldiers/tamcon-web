@@ -8,7 +8,7 @@ import Image from "next/image";
 export function Hero() {
   return (
     <Container className="max-md:pb-5">
-      <main className="md:grid grid-cols-2 gap-x-16 items-center">
+      <main className="md:grid grid-cols-2 gap-x-16 items-center max-lg:pb-24">
         <article className="left max-w-[624px]">
           {hero_content?.map((content, key) => (
             <section className="flex flex-col" key={key}>
