@@ -7,7 +7,7 @@ import { removeAllWhitespace } from "@/utils/sanitizer";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function Sidebar() {
+export default function Sidebar({ services = false }: { services?: boolean }) {
   const [open, setOpen] = useState(false);
 
   const toggle = () => setOpen((prev) => !prev);
@@ -22,7 +22,7 @@ export default function Sidebar() {
       document.body.style.overflow = "auto";
     };
   }, [open]);
-
+  console.log("services-->", services);
   return (
     <aside>
       <section className="relative z-50 md:hidden">
@@ -45,7 +45,9 @@ export default function Sidebar() {
               <li className="text-" key={key}>
                 <Link
                   href={removeAllWhitespace(link).toLowerCase()}
-                  className={`${the_header.className} font-regular text-base text-gray-600`}
+                  className={`${the_header.className} font-regular text-base ${
+                    services ? "text-primary-25" : "text-gray-600"
+                  }`}
                 >
                   {link}
                 </Link>
@@ -65,7 +67,9 @@ export default function Sidebar() {
           <li key={key}>
             <Link
               href={removeAllWhitespace(link).toLowerCase()}
-              className={`${the_header.className} font-normal text-base text-gray-600`}
+              className={`${the_header.className} font-normal text-base ${
+                services ? "text-primary-25" : "text-gray-600"
+              }`}
             >
               {link}
             </Link>
